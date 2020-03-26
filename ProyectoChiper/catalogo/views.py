@@ -7,7 +7,7 @@ from django.urls import reverse
 from .catalogo_logic.catalogo_logic import get_catalogo, create_producto
 from django.contrib.auth.decorators import login_required
 
-@login_required
+#@login_required
 def catalogo_list(request):
     catalogo = get_catalogo()
     context = {

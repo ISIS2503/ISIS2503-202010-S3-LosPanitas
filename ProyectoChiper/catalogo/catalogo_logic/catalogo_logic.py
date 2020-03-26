@@ -1,9 +1,11 @@
 from django.db import models
 from ..models import Catalogo
+from ..models import Producto
+
 
 #ASR1
 def get_catalogo():
-    queryset=Catalogo.objects.all()
+    queryset=Producto.objects.all()
     return (queryset)
 
 #ASR2
