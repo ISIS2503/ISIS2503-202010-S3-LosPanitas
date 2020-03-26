@@ -1,5 +1,5 @@
 from django.db import models
-from catalogo.models import Catalogo
+from ..models import Catalogo
 
 #ASR1
 def get_catalogo():
