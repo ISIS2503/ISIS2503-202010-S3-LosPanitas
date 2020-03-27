@@ -4,12 +4,12 @@ from .forms import ProductoForm
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from django.urls import reverse
-from .catalogo_logic.catalogo_logic import get_catalogo, create_producto
+from .catalogo_logic.catalogo_logic import get_products, create_producto
 from django.contrib.auth.decorators import login_required
 
 #@login_required
 def catalogo_list(request):
-    catalogo = get_catalogo()
+    catalogo = get_products()
     context = {
         'catalogo_list': catalogo
     }
@@ -19,9 +19,12 @@ def producto_create(request):
     if request.method == 'POST':
         form = ProductoForm(request.POST)
         if form.is_valid():
-            create_producto(form)
-            messages.add_message(request, messages.SUCCESS, 'Producto create successful')
-            return HttpResponseRedirect(reverse('productoCreate'))
+            rta=create_producto(form)
+            if rta=='Producto creado':
+                messages.add_message(request, messages.SUCCESS, rta)
+                return HttpResponseRedirect(reverse('productoCreate'))
+            else:
+                messages.add_message(request, messages.ERROR, rta)
         else:
             print(form.errors)
     else:
@@ -31,4 +34,4 @@ def producto_create(request):
         'form': form,
     }
 
-    return render(request, 'Measurement/measurementCreate.html', context)
+    return render(request, 'Catalogo/productoCreate.html', context)
