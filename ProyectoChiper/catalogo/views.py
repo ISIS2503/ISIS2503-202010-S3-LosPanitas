@@ -22,9 +22,13 @@ def producto_create(request):
             rta=create_producto(form)
             if rta=='Producto creado':
                 messages.add_message(request, messages.SUCCESS, rta)
+                print(messages)
                 return HttpResponseRedirect(reverse('productoCreate'))
             else:
                 messages.add_message(request, messages.ERROR, rta)
+                print(messages)
+                messages.error(request, "Error")
+                return HttpResponseRedirect(reverse('productoCreate'))
         else:
             print(form.errors)
     else:
