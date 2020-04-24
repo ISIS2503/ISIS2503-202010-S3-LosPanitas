@@ -6,7 +6,7 @@ from django.http import HttpResponseRedirect
 from django.urls import reverse
 from .catalogo_logic.catalogo_logic import get_products, create_producto
 from django.contrib.auth.decorators import login_required
-from ProyectoChiper.ProyectoChiper.auth0backend import getRole
+from ProyectoChiper.auth0backend import getRole
 
 #role = getRole(request)
 #    if role == "Supervisor":
