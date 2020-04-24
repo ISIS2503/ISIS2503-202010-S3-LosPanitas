@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'catalogo',
-    'bodega'
+    'bodega',
+    'social_django',
 ]
 
 MIDDLEWARE = [
@@ -133,3 +134,15 @@ MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'static', 'media')
 STATICFILES_DIRS = (
     os.path.join(PROJECT_ROOT, 'static'),
 )
+
+LOGIN_URL = "/login/auth0"
+LOGIN_REDIRECT_URL="/"
+LOGOUT_REDIRECT_URL="https://isis2503-evjaimes.auth0.com/v2/logout?returnTo=http%3A%2F%2F3.89.36.154:8000"
+
+SOCIAL_AUTH_TRAILING_SLASH = False # Remove end slash from routes
+SOCIAL_AUTH_AUTH0_DOMAIN ='isis2503-evjaimes.auth0.com'
+SOCIAL_AUTH_AUTH0_KEY= 'XK0ZIXSp6CdUwhnmSyXi212OCCAPqNu2'
+SOCIAL_AUTH_AUTH0_SECRET ='-oIFXvviNdHYu1kr5zn_yx2Cqba_SBgOuGdYkSWRGcK_m9kBBxKovxifkeYOAegT'
+
+SOCIAL_AUTH_AUTH0_SCOPE = [ 'openid', 'profile' ]
+AUTHENTICATION_BACKENDS = { 'monitoring.auth0backend.Auth0', 'django.contrib.auth.backends.ModelBackend', }
