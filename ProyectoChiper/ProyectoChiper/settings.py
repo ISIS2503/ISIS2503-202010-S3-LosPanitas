@@ -146,7 +146,7 @@ SOCIAL_AUTH_AUTH0_KEY= 'XK0ZIXSp6CdUwhnmSyXi212OCCAPqNu2'
 SOCIAL_AUTH_AUTH0_SECRET ='-oIFXvviNdHYu1kr5zn_yx2Cqba_SBgOuGdYkSWRGcK_m9kBBxKovxifkeYOAegT'
 
 SOCIAL_AUTH_AUTH0_SCOPE = [ 'openid', 'profile' ]
-AUTHENTICATION_BACKENDS = { 'monitoring.auth0backend.Auth0', 'django.contrib.auth.backends.ModelBackend', }
+AUTHENTICATION_BACKENDS = { 'ProyectoChiper.auth0backend.Auth0', 'django.contrib.auth.backends.ModelBackend', }
 
 #HTTPS
 SECURE_SSL_REDIRECT = True
