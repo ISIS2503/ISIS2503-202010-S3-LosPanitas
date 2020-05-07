@@ -14,11 +14,11 @@ RUN apt-get update \
 
 && pip install psycopg2 \
 
-&& pip install psycopg2-binary
+&& pip install psycopg2-binary \
 
-&& pip install django-sslserver
+&& pip install django-sslserver \
 
-&& pip install social-auth-app-django
+&& pip install social-auth-app-django \
 
 && pip install psycopg2==2.7.4 
 
