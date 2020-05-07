@@ -16,6 +16,10 @@ RUN apt-get update \
 
 && pip install psycopg2-binary
 
+&& pip install django-sslserver
+
+&& pip install social-auth-app-django
+
 COPY ProyectoChiper /home/
 
 EXPOSE 8000
