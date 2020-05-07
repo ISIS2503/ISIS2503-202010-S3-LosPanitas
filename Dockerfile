@@ -16,6 +16,6 @@ RUN apt-get update \
 
 && pip install psycopg2-binary
 
-COPY ISIS2503-202010-S3-LosPanitas/ProyectoChiper /home/
+COPY ProyectoChiper /home/
 
 EXPOSE 8000
