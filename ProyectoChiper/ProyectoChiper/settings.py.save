@@ -25,7 +25,7 @@ SECRET_KEY = '(!gj&n2&%gjf9cq_fhg(5ndj&00z$c#)q&1q8@)lwibx%sqmq7'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['3.80.172.156', '52.23.243.212', '127.0.0.1', '3.89.158.190', 'backend','3.86.197.174' ]
+ALLOWED_HOSTS = ['3.80.172.156', '52.23.243.212', '127.0.0.1', '3.89.158.190', 'backend']
 
 
 # Application definition
@@ -138,12 +138,12 @@ STATICFILES_DIRS = (
 
 LOGIN_URL = "/login/auth0"
 LOGIN_REDIRECT_URL="/"
-LOGOUT_REDIRECT_URL="https://isis2503-psvargas.auth0.com/v2/logout?returnTo=https%3A%2F%2F3.86.197.174:8000"
+LOGOUT_REDIRECT_URL="https://isis2503-psvargas.auth0.com/v2/logout?returnTo=http%3A%2F%2F3.86.197.17"
 
 SOCIAL_AUTH_TRAILING_SLASH = False # Remove end slash from routes
 SOCIAL_AUTH_AUTH0_DOMAIN ='isis2503-psvargas.auth0.com'
-SOCIAL_AUTH_AUTH0_KEY= 'by1w6h82OncJr2pt9VkPEEkHn4p3t9cy'
-SOCIAL_AUTH_AUTH0_SECRET ='sZjQzKAXdkduvF84XgW0hSSkmyI29pNu9wK4YPnLeQ35m98hgLkGq3wbFGYp8UE0'
+SOCIAL_AUTH_AUTH0_KEY= 'XK0ZIXSp6CdUwhnmSyXi212OCCAPqNu2'
+SOCIAL_AUTH_AUTH0_SECRET ='-oIFXvviNdHYu1kr5zn_yx2Cqba_SBgOuGdYkSWRGcK_m9kBBxKovxifkeYOAegT'
 
 SOCIAL_AUTH_AUTH0_SCOPE = [ 'openid', 'profile' ]
 AUTHENTICATION_BACKENDS = { 'ProyectoChiper.auth0backend.Auth0', 'django.contrib.auth.backends.ModelBackend', }
