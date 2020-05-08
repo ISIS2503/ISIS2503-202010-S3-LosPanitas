@@ -53,4 +53,8 @@ def producto_create(request):
 
         return render(request, 'Catalogo/productoCreate.html', context)
     else:
-        return HttpResponse("Unauthorized User")
+        catalogo = get_products()
+        context = {
+        'catalogo_list': catalogo,
+        }
+        return render(request, 'Catalogo/catalogo.html', context)
