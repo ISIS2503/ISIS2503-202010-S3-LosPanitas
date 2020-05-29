@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'bodega',
     'social_django',
     'sslserver',
+    'factura'
 ]
 
 MIDDLEWARE = [

@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="57f7c0d0-af4d-4979-9762-d7085fcaa894" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ProyectoChiper/factura/logic/logic_facturas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProyectoChiper/factura/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ISIS2503-202010-S3-LosPanitas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ISIS2503-202010-S3-LosPanitas.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProyectoChiper/ProyectoChiper/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoChiper/ProyectoChiper/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoChiper/ProyectoChiper/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoChiper/ProyectoChiper/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoChiper/bodega/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoChiper/bodega/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProyectoChiper/bodega/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/ProyectoChiper/bodega/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,14 +67,22 @@
   <component name="ProjectId" id="1Zawud6pjcHi5QKZVmAvEyP1C1D" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProyectoChiper" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\UniAndes\V Semestre\Arquisoft\ISIS2503-202010-S3-LosPanitas\ProyectoChiper\factura\logic" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\UniAndes\V Semestre\Arquisoft\ISIS2503-202010-S3-LosPanitas\ProyectoChiper" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -71,15 +105,29 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="275" y="23" key="#Inspections" timestamp="1585090893098">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="23" key="#Inspections/0.0.1366.728@0.0.1366.728" timestamp="1585090893098" />
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585107945884">
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590712207678">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1585107945884" />
+    <state x="274" y="23" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1590712207678" />
     <state x="429" y="167" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585106534255">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -92,9 +140,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="196" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1585107919107" />
-    <state x="184" y="7" key="SettingsEditor" timestamp="1585090874468">
+    <state x="700" y="88" key="RollbackChangesDialog" timestamp="1590713906136">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1585090874468" />
+    <state x="700" y="88" key="RollbackChangesDialog/0.0.1366.728@0.0.1366.728" timestamp="1590713906136" />
+    <state x="184" y="7" key="SettingsEditor" timestamp="1590718648835">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="7" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1590718648835" />
   </component>
 </project>
