@@ -9,10 +9,10 @@ from django.contrib.auth.decorators import login_required
 from ProyectoChiper.auth0backend import getRole
 
 
-@login_required
+#@login_required
 def catalogo_list(request):
     catalogo = get_products()
-    gerente= False
+    gerente= True
     role= getRole(request)
     if role=="Gerencia Chiper":
         gerente= True
@@ -24,9 +24,9 @@ def catalogo_list(request):
     return render(request, 'Catalogo/catalogo.html', context)
 
 
-@login_required
+#@login_required
 def producto_create(request):
-    role=getRole(request)
+    role="Gerencia Chiper"
     if role=="Gerencia Chiper":
         if request.method == 'POST':
             form = ProductoForm(request.POST)
