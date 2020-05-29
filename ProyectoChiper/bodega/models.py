@@ -11,9 +11,9 @@ class Proveedor(models.Model):
 
 class ProductoProveedor(models.Model):
 
-    foto = models.CharField(max_length=100)
     nombre = models.CharField(max_length=30)
     cant = models.FloatField(null=True, blank=False, default=None)
+    numBodega = models.FloatField(null=True, blank=False, default=None)
     fechaLlegada=models.DateTimeField(auto_now=False, auto_now_add=True)
     provid=models.ForeignKey(Proveedor, on_delete=models.CASCADE)
 
