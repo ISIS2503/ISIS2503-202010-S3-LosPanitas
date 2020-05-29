@@ -14,4 +14,4 @@ class ProductoFactura(models.Model):
     factura = models.ForeignKey(Factura, on_delete=models.CASCADE)
 
     def __str__(self):
-        return '%s %s'.format(self.fecha, self.monto)
+        return '%s %s %s %s'.format(self.nombre, self.precio, self.tipo, self.factura)
