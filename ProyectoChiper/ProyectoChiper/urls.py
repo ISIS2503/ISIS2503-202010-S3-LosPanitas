@@ -26,5 +26,6 @@ urlpatterns = [
     path('', include('catalogo.urls')),
     path(r'', include('django.contrib.auth.urls')),
     path(r'', include('social_django.urls')),
-    path('', include('factura.urls'))
+    path('', include('factura.urls')),
+    path('',include('bodega.urls'))
 ]

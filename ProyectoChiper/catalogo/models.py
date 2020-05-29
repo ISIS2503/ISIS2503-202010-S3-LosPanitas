@@ -18,7 +18,6 @@ class Producto(models.Model):
     precio = models.FloatField(null=True, blank=True, default=None)
     tipo = models.CharField(max_length=20)
     catalogo = models.ForeignKey(Catalogo, on_delete=models.CASCADE)
-    #inventario = models.ForeignKey(InventarioBodega, on_delete=models.CASCADE, default=None)
 
     def __str__(self):
         return '%s-%s-%s' % (self.nombre, self.precio, self.catalogo)
