@@ -13,7 +13,7 @@ from ProyectoChiper.auth0backend import getRole
 def catalogo_list(request):
     catalogo = get_products()
     gerente= True
-    role= getRole(request)
+    role= "Gerencia Chiper"
     if role=="Gerencia Chiper":
         gerente= True
 
