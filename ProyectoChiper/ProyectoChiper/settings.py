@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'catalogo',
     'bodega',
     'social_django',
-    'sslserver',
+   # 'sslserver',
     'factura'
 ]
 
@@ -150,6 +150,6 @@ SOCIAL_AUTH_AUTH0_SCOPE = [ 'openid', 'profile' ]
 AUTHENTICATION_BACKENDS = { 'ProyectoChiper.auth0backend.Auth0', 'django.contrib.auth.backends.ModelBackend', }
 
 #HTTPS
-SECURE_SSL_REDIRECT = True
-SESSION_COOKIE_SECURE = True
-CSRF_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = False
+SESSION_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = False
