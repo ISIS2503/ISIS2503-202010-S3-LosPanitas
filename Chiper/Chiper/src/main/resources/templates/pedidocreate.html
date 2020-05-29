@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chiper</title>
+</head>
+<body>
+    <h1>Crear pedido</h1>
+    <div>
+    	<a class="btn" href="/pedidos">Volver</a>
+    </div>
+    <form method="post" th:action="${givenAction}">
+        <div>
+        	<h2>Nombre:</h2>
+            <input name="name" type="text" placeholder="name" th:value="${givenTitle}" />
+        </div>
+        <div>
+        	<h2>Description::</h2>
+            <textarea name="role" type="text" placeholder="description" th:text="${givenContent}"></textarea>
+        </div>
+        <div>
+            <button type="submit">Post</button>
+        </div>
+    </form>
+</body>
+</html>
