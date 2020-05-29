@@ -26,8 +26,8 @@
                     <table class="table table-hover">
                         <thead>
                         <tr style="color:#0E2EB0">
-                            <th font color="red">Producto</th>
-                            <th>Imagen</th>
+                            <th font color="red">Imagen</th>
+                            <th>Producto</th>
                             <th>Precio</th>
                             <th>Tipo</th>
                         </tr>
@@ -36,8 +36,9 @@
 
                         {% for producto in catalogo_list %}
                         <tr>
+                            
+                            <td><img src={{producto.foto}}  alt="..." width="100" height="100"></td>
                             <td>{{ producto.nombre }}</td>
-                            <td>{{ producto.foto }}</td>
                             <td>{{ producto.precio }}</td>
                             <td>{{ producto.tipo }}</td>
                         </tr>
